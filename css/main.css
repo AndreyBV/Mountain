@@ -21,7 +21,7 @@ body {
 
 .container-wide {
 	margin: 0 auto;
-	width: 1790px;
+	max-width: 1790px;
 	padding: 0 15px;
 }
 .container {
@@ -47,6 +47,11 @@ body {
 	font-family: 'ChronicleDisplay', serif;
 	font-weight: 700;
 	font-size: 32px;
+	transition: transform 0.2s ease-in;
+	transform-origin: 0% 50%;
+}
+.logo:hover {
+	transform: scale(1.1);
 }
 .logo a {
 	text-decoration: none;
@@ -97,8 +102,22 @@ body {
 	background-color: #fbd784;
 }
 .account {
+	position: relative;
 	display: flex;
 	align-items: center;
+	padding-left: 10px;
+}
+.account::before {
+	display: block;
+	content: '';
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	background-image: url('./../img/icon/account.svg');
+	transform: translateY(-50%);
+	width: 25px;
+	height: 25px;
+	background-size: contain;
 }
 
 .account a {
@@ -107,7 +126,7 @@ body {
 	font-weight: 700;
 	text-decoration: none;
 	color: white;
-	margin-left: 8px;
+
 	transition: color 0.2s ease-in;
 }
 .account a:after {
@@ -236,6 +255,7 @@ main {
 	/* padding-top: 141px; */
 	padding-left: 150px;
 	max-width: 782px;
+	transition: transform 0.2s ease-in;
 }
 .article-text::before {
 	content: attr(data-number);
@@ -250,6 +270,9 @@ main {
 	font-size: 240px;
 	line-height: 1;
 	color: rgba(255, 255, 255, 0.1);
+}
+.article-text:hover {
+	transform: translateX(5%);
 }
 
 .article-subtitle {
@@ -289,6 +312,7 @@ main {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.777;
+	margin-bottom: 27px;
 }
 
 .article-more {
@@ -298,6 +322,9 @@ main {
 	font-weight: 700;
 	line-height: 1.222;
 	padding-right: 16px;
+	color: #fbd784;
+}
+.article a {
 	color: #fbd784;
 }
 .article-more::after {
