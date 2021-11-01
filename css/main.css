@@ -328,6 +328,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	/* flex-wrap: wrap; */
 }
 
 .article + .article {
@@ -344,6 +345,7 @@ main {
 	padding-left: 150px;
 	max-width: 782px;
 	transition: transform 0.2s ease-in;
+	margin-right: 30px;
 }
 .article-text::before {
 	content: attr(data-number);

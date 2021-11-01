@@ -1,9 +1,13 @@
 /* .header, */
 /* .hero-wrapper, */
-.main,
+/* .main, */
 .footer {
 	display: none;
 }
+
+/*
+ * ───────────────────────────────────────────────────────────────────── 1200 ─────
+ */
 
 @media (max-width: 1200px) {
 	/*
@@ -13,7 +17,36 @@
 	.hero-title {
 		font-size: 68px;
 	}
+
+	/*
+	 * ─── MAIN ───────────────────────────────────────────────────────────────────────
+	 */
+	main {
+		margin-top: 35%;
+	}
+	.article-text {
+		padding-left: 50px;
+		margin-right: 0;
+		width: 50%;
+	}
+	.article-text::before {
+		transform: translateY(-80px);
+		width: 140px;
+		height: 140px;
+		font-size: 140px;
+	}
+	.article-img {
+		width: 45%;
+	}
+	.article img {
+		max-width: 100%;
+	}
 }
+
+/*
+ * ────────────────────────────────────────────────────────────────────── 800 ─────
+ */
+
 @media (max-width: 800px) {
 	/*
 	 * ─── NAVIGATION BUTTON ──────────────────────────────────────────────────────────
@@ -41,7 +74,38 @@
 	.hero-title {
 		font-size: 58px;
 	}
+
+	/*
+	 * ─── MAIN ───────────────────────────────────────────────────────────────────────
+	 */
+	.article-title {
+		font-size: 44px;
+	}
 }
+@media (max-width: 720px) {
+	.article {
+		flex-direction: column-reverse;
+	}
+	.article + .article {
+		margin-top: 100px;
+	}
+	.article:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+	.article-text {
+		width: 100%;
+	}
+	.article-img {
+		margin-top: 0;
+		margin-bottom: 120px;
+		width: 80%;
+	}
+}
+
+/*
+ * ────────────────────────────────────────────────────────────────────── 520 ─────
+ */
+
 @media (max-width: 520px) {
 	/*
 	 * ─── HERO ───────────────────────────────────────────────────────────────────────
@@ -66,5 +130,36 @@
 	}
 }
 
-@media (max-width: 320px) {
+/*
+ * ────────────────────────────────────────────────────────────────────── 400 ─────
+ */
+
+@media (max-width: 400px) {
+	/*
+	 * ─── HERO ───────────────────────────────────────────────────────────────────────
+	 */
+
+	.hero-wrapper {
+		padding-top: 75px;
+	}
+
+	/*
+	 * ─── MAIN ───────────────────────────────────────────────────────────────────────
+	 */
+	.article {
+		text-align: justify;
+	}
+	.article + .article {
+		margin-top: 60px;
+	}
+	.article-text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.article-subtitle {
+		font-size: 12px;
+	}
+	.article-title {
+		font-size: 30px;
+	}
 }
