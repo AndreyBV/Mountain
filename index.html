@@ -5,10 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="./fonts/gilroy/stylesheet.css" />
-		<link rel="stylesheet" href="./fonts/chronicle-display/stylesheet.css" />
+
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+		<link rel="stylesheet" href="./fonts/gilroy/stylesheet.css" />
+		<link rel="stylesheet" href="./fonts/chronicle-display/stylesheet.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -17,6 +19,7 @@
 					<h2 class="logo">
 						<a href="#">MNTN</a>
 					</h2>
+
 					<nav class="nav">
 						<ul>
 							<li><a href="#">Equipment</a></li>
@@ -32,9 +35,27 @@
 						/> -->
 						<a href="#" class="account-text">Account</a>
 					</div>
+
+					<button class="nav-button">
+						<span class="nav-button-icon"></span>
+					</button>
+
+					<div class="mobile-nav">
+						<nav class="nav">
+							<ul>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</nav>
+						<div class="account">
+							<a href="#" class="account-text">Account</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
+
 		<div class="hero-wrapper">
 			<a href="#" class="hero">
 				<div class="hero-category">A Hiking guide</div>
@@ -43,7 +64,7 @@
 			</a>
 		</div>
 
-		<main>
+		<main class="main">
 			<div class="container">
 				<article class="article">
 					<div class="article-text" data-number="01">
@@ -139,5 +160,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

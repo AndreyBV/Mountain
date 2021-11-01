@@ -1,0 +1,25 @@
+/* .header, */
+.hero-wrapper,
+.main,
+.footer {
+	display: none;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 800px) {
+	.nav,
+	.account {
+		display: none;
+	}
+	.nav-button {
+		display: block;
+	}
+	/* JS */
+	.mobile-nav-active {
+		display: flex;
+	}
+}
+
+@media (max-width: 320px) {
+}
