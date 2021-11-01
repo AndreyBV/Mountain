@@ -89,6 +89,7 @@
 	.nav-button {
 		display: block;
 	}
+
 	/* JS */
 	.mobile-nav-active {
 		display: flex;
@@ -151,6 +152,14 @@
  */
 
 @media (max-width: 520px) {
+	/*
+	 * ─── NAVIGATION BUTTON ──────────────────────────────────────────────────────────
+	 */
+
+	.mobile-nav {
+		width: 100%;
+	}
+
 	/*
 	 * ─── HERO ───────────────────────────────────────────────────────────────────────
 	 */
